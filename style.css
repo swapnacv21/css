@@ -1,0 +1,15 @@
+#a1{
+    color:brown;
+}
+h2{
+    color:blueviolet;
+}
+h1{
+    color:blue;
+}
+.a2{
+    color:black;
+}
+.a2,#a1,p{
+    background-color:white;
+}
