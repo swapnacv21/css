@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border:1px solid;
+        }
+        table{
+            width:60%;
+            border-collapse: collapse;
+        }
+        th{
+            height:70px;
+        }
+        td{
+            text-align: center;
+            height:50px;
+            vertical-align: top;
+           
+        }
+        td,th{
+            padding: 50px;
+            border-bottom: 3px solid;
+        }
+        li{
+            display:block;
+        }
+        span{
+            display:block;
+        }
+        h1{
+            visibility:hidden;
+        }
+        .main1{
+            background-color: black;
+            width:300px;
+            height:300px;
+
+        }
+        .sub1{
+            height:100px;
+            width:100px;
+            background-color: white;
+            position: relative;
+            top:100px;
+            left:100px;
+        }
+        .container{
+            position: relative;
+
+        }
+        .top{
+            position: absolute;
+            top:8px;
+            left:16px;
+            font-size: 18px;
+
+        }
+        img{
+            opacity: 0.4;
+        }
+        .topright{
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 18px;
+        }
+        .bottom-left{
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+        }
+        .bottom-right{
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+        }
+        .centered{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        .first{
+            background-color: red;
+            width:600px;
+            height:400px;
+        }
+        .second{
+            background-color: green;
+            width:300px;
+            height:200px;
+            position: relative;
+            top:100px;
+            left:150px;
+        }
+        .third{
+            background-color: blue;
+            width:100px;
+            height:100px;
+            position:relative;
+            top:-50px;
+            left:250px;
+        }
+        .blue{
+            background-color: blue;
+            width:500px;
+            height:500px;
+        }
+        .red{
+            background-color: red;
+            width:300px;
+            height:300px;
+            position:relative;
+            top:200px;
+            left:200px;
+
+        }
+        .black{
+            background-color: black;
+            width:300px;
+            height:300px;
+            position:relative;
+            top:-300px;
+            left:0px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Jibin</td>
+            <td>Aji</td>
+        </tr>
+        <tr>
+            <td>Sandra</td>
+            <td>V</td>
+        </tr>
+    </table>
+    <ul>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ul>
+    <span>hello</span><span>how are you</span><span>nice to meet you</span>
+    <h1 class="hidden">you are welcome</h1>
+    
+    <div class="main">
+        <div class="sub">
+
+        </div>
+    </div>
+    <div class="main1">
+        <div class="sub1">
+
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="landscape.jpg" alt=""  height="800px" style="width:100%">
+        <div class="top">TOPLEFT</div>
+        <div class="topright">TOPRIGHT</div>
+        <div class="bottom-left">BOTTOM LEFT</div>
+        <div class="bottom-right">BOTTOM RIGHT</div>
+        <div class="centered">CENTER</div>
+    </div>
+
+    <div class="first">
+        <div class="second"></div>
+        <div class="third"></div>
+    </div>
+
+    <div class="blue">
+        <div class="red"></div>
+        <div class="black"></div>
+    </div>
+
+</body>
+</html>
