@@ -5,15 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+       
         img{
             opacity:0.3;
         }
         img:hover{
             opacity: 0.9;
         }
+        p::first-letter{
+            color:lightcoral;
+            font-size: xx-large;
+        }
+        p::first-line{
+            color:lightseagreen;
+            font-variant: small-caps;
+        }
+        h1::before{
+            content: url(smiley.jpeg);
+        }
+        ::marker{
+            color:darkgreen
+        }
+        ::selection{
+            color:red;
+            background: darkseagreen;
+        }
+        .background{
+            background: url(onedirection.webp) repeat;
+            background-size: 200px;
+            border: 2px solid black;
+        }
+        .transbox{
+            margin:30px;
+            background-color: white;
+            border: 1px solid black;
+            opacity: 0.6;
+        }
+        .transbox p{
+            margin: 5%;
+            font-weight: bold;
+            color: black;
+        }
+        
     </style>
 </head>
 <body>
+    
     <img src="onedirection.webp" alt="">
+    <h1>W3SCHOOLS</h1>
+    <p>You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter and the first line of a text!</p>
+    <ul>
+        <li>hello</li>
+        <li>hi</li>
+    </ul>
+    <div class="background">
+        <div class="transbox">
+            <p>cccccccccccccccccccccccccccccccccccccccccc</p>
+        </div>
+    </div>
+   
 </body>
 </html>
