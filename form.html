@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         input{
+            width:100% ;
+            padding:12px 20px;
+            margin:8px 0px;
+            box-sizing: border-box;
+            border: 2px solid gray;
+            background-color: gray;
+            color: white;
+            outline:none;
+           
+         }
+         input[type=text]:focus{
+            width: 100%;
+            background-color:black;
+         }
+         #a1{
+            width:130px;
+            background-image: url(searchicon.png);
+            background-size: 40px;
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            padding: 12px 20px 12px 40px;
+            transition: width 0.4s ease-in-out;
+         }
+    </style>
+   
+</head>
+<body>
+    <h2>Form</h2>
+    <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" value="Jibin">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" value="Aji">
+        <input type="text" name="search" placeholder="Search.." id="a1">
+       
+    </form>
+    
+</body>
+</html>
