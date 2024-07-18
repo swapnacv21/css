@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+           
+            display: grid;
+            grid-template-areas:'ambidu ambidu ambidu ambidu ambidu' ;
+            background-color: gray;
+            padding: 10px;
+            gap:50px;
+            align-content: center;
+            height: 500px;
+            
+        }
+        .grid>div{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            padding: 40px ;
+            font-size: 30px;
+            text-align: center;
+            
+           
+            
+        }
+        .grid-item1{
+           
+            grid-column: 1/span 1;
+            grid-row: 1/span 1;
+            grid-area: ambidu;
+        }
+        .grid-item2{
+            grid-area: 0 / 0 / 0 / 0;
+
+        }
+        
+       
+
+       
+    </style>
+</head>
+<body>
+    <h2>Grid</h2><br>
+    <div class="grid">
+        <div class="grid-item1">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item2">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+    </div>
+</body>
+</html>
