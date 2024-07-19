@@ -15,35 +15,85 @@
             grid-template-areas:
             'head head head head nav nav'
             'sub sub sub sub img img'
-            'msg msg msg msg img img';
+            'msg msg msg msg img img'
+            'button button button button img img';
+            grid-template-rows: 80px 300px 70px 50px;
             background-color: blue;
             padding:10px;
         }
         .head{
             background-color: aqua;
+            text-align: center;
         }
         .nav{
             background-color: bisque;
+            float: left;
         }
         .sub{
-            background-color: black;
+            background-color:violet;
+            text-align: center;
         }
         .img{
             background-color: blueviolet;
         }
         .msg{
             background-color: coral;
+            text-align: center;
         }
+        .button{
+           
+            display: flex;
+        
+            
+            
+        }
+        .btn1{
+            display: flex;
+            flex-direction: row;
+            width: 650px;
+            height: 52px;
+            text-align: center;
+            font-size: 30px;
+            background-color: green;
+            justify-content: center;
+        }
+        .btn2{
+            display: flex;
+            flex-direction: row;
+            width: 680px;
+            height: 52px;
+            text-align: center;
+            font-size: 30px;
+            background-color:lightgreen;
+            justify-content: center;
+        }
+        
+        
+        
+        
 
     </style>
 </head>
 <body>
     <div class="main">
-        <div class="head">Head</div>
-        <div class="nav">Nav</div>
-        <div class="sub">Sub</div>
-        <div class="img">Img</div>
-        <div class="msg">Msg</div>
+        <div class="head"><h1>Web Dairy</h1> </div>
+        <div class="nav">
+            <a href="" >Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+        <div class="sub">
+            <h1>css grid example</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium maxime veritatis, <br> temporibus rem autem magni incidunt dignissimos nihil alias deserunt id velit totam blanditiis repellendus molestiae, nisi tempora soluta sint.</p>
+        </div>
+        <div class="img">
+            <img src="hand-holding-light-bulb-business-digital-marketing-innovation-technology-icons-network-hand-holding-light-bulb-business-138534565.webp" alt="" style="width: 565px; height: 420px;">
+        </div>
+        <div class="msg"><h1>"Lorem ipsum dolor sit amet,"</h1></div>
+        <div class="button">
+            <div class="btn1">read more</div>
+            <div class="btn2">view all</div>
+        </div>
 
     </div>
 </body>
