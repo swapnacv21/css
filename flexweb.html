@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            background-color: lightblue;
+            padding: 5px;
+        }
+        .head1{
+            text-align: center;
+        }
+        .head2{
+            padding: 60px;
+            text-align: center;
+            background:skyblue;
+            color: white;
+        }
+        .navbar{
+            display: flex;
+            background-color:lightslategray;
+        }
+        .navbar a{
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover{
+            background-color: lightblue;
+            color: black;
+
+        }
+        .image{
+            height: 200px;
+            background-color: gray;
+        }
+        .img1{
+            height:60px;
+            background-color: gray;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .side{
+            flex:30%;
+            background-color: aliceblue;
+            padding: 20px;
+        }
+        .main{
+            flex: 70%;
+            background-color: lightblue;
+            padding: 20px;
+        }
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background:lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h3 class="head1">Flexible website example</h3>
+    </div>
+    <div class="head2">
+        <h1>My Website</h1>
+        <p>With a <b>flexible</b> layout.</p>
+    </div>
+    <div class="navbar">
+        <a href="#">Link</a>
+        <a href="#">Link1</a>
+        <a href="#">Link2</a>
+        <a href="#">Link3</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <h5>Photo of Me:</h5>
+            <div class="image">Image</div>
+            <p>Some text about me.</p>
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <div class="img1">Image</div><br>
+            <div class="img1">Image</div><br>
+            <div class="img1">Image</div>
+        </div>
+        <div>
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, July 22, 2024</h5>
+            <div class="img1">Image</div>
+            <p>Some Text</p>
+            <p>Some text....</p><br>
+            <h2>TITLE HEADING</h2>
+            <h5>itle description, July 22, 2024</h5>
+            <div class="img1">Image</div>
+            <p>Some text</p>
+            <p>Some text.........</p>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>
