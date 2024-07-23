@@ -10,6 +10,7 @@
         .sub{grid-area: sub;}
         .img{grid-area: img;}
         .msg{grid-area: msg;}
+        .button{grid-area: button;}
         .main{
             display: grid;
             grid-template-areas:
@@ -24,14 +25,17 @@
         .head{
             background-color: aqua;
             text-align: center;
+            
         }
         .nav{
             background-color: bisque;
             float: left;
+            text-align: center;
         }
         .sub{
             background-color:violet;
             text-align: center;
+            font-size: 10px;
         }
         .img{
             background-color: blueviolet;
@@ -48,24 +52,40 @@
             
         }
         .btn1{
-            display: flex;
-            flex-direction: row;
-            width: 650px;
+            flex:50%;
+            /* width: 650px; */
             height: 52px;
             text-align: center;
-            font-size: 30px;
+            font-size: 10px;
             background-color: green;
             justify-content: center;
         }
         .btn2{
-            display: flex;
-            flex-direction: row;
-            width: 680px;
+            flex:50%;
+            /* width: 680px; */
             height: 52px;
             text-align: center;
-            font-size: 30px;
+            font-size: 10px;
             background-color:lightgreen;
             justify-content: center;
+        }
+        @media screen and (max-width:600px) {
+            .main{
+                grid-template-areas:
+                'head head head head'
+                'nav nav nav nav'
+                'sub sub sub sub'
+                'img img img img'
+                'msg msg msg msg'
+                'button button button button';
+                grid-template-rows: 60px 60px 270px 250px 100px 100px;
+            }
+        }
+        #p1{
+            font-size: 40px;
+        }
+        #p2{
+            font-size: 2vw;
         }
         
         
@@ -87,7 +107,7 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium maxime veritatis, <br> temporibus rem autem magni incidunt dignissimos nihil alias deserunt id velit totam blanditiis repellendus molestiae, nisi tempora soluta sint.</p>
         </div>
         <div class="img">
-            <img src="hand-holding-light-bulb-business-digital-marketing-innovation-technology-icons-network-hand-holding-light-bulb-business-138534565.webp" alt="" style="width: 565px; height: 420px;">
+            <img src="hand-holding-light-bulb-business-digital-marketing-innovation-technology-icons-network-hand-holding-light-bulb-business-138534565.webp" alt="" style="width: 100%; height: 100%;">
         </div>
         <div class="msg"><h1>"Lorem ipsum dolor sit amet,"</h1></div>
         <div class="button">
@@ -96,5 +116,7 @@
         </div>
 
     </div>
+    <p id="p1">hello</p>
+    <p id="p2">hi</p>
 </body>
 </html>
